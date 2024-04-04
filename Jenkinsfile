@@ -7,7 +7,7 @@ pipeline {
         stage ('Build') {
             steps {
                 bat 'mvn clean -Dmaven.test.skip package'
-            }
+            } 
         }
         stage ('Run JAR File') {
             steps {
